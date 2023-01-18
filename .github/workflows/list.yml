@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths: 
-      - '.github/.workflows/list.yml'
+      - '.github/workflows/list.yml'
   schedule:
     - cron: '0 */2 * * *'
 

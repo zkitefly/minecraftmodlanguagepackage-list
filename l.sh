@@ -1,3 +1,6 @@
+# 获取的 target_commitish 前1-7个字符 & 删除文件夹
+targetcommitish=$(cat "latest.txt" | jq -r ".target_commitish" | cut -c1-7)
+rm -r ./CFPAOrg-Minecraft-Mod-Language-Package-${targetcommitish}
 # 获取 Latest GitHub Releases 名称 & 资源地址
 name=$(cat "latest.txt" | jq -r ".name")
 cat "latest.txt" | jq -r ".zipball_url" > d.txt
@@ -6,7 +9,7 @@ targetcommitish=$(cat "latest.txt" | jq -r ".target_commitish" | cut -c1-7)
 # 下载资源
 wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O latest.zip -i "d.txt"
 # 解压
-unzip -q latest.zip
+unzip -q -o latest.zip
 ls
 # 跳转
 cd ./CFPAOrg-Minecraft-Mod-Language-Package-${targetcommitish}
@@ -67,6 +70,4 @@ cd ../
 mv *.html ../
 cd ../
 # 删除文件
-rm -r ./CFPAOrg-Minecraft-Mod-Language-Package-${targetcommitish}
 rm latest.zip
-rm latest.txt

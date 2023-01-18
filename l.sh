@@ -26,7 +26,7 @@ cd ../
 ######################### 1.12.2-n-es
 cd ./1.12.2
 cd ./assets
-tree -L 1 -H 1.12.2（${name}） > 1.12.2-n-es.html
+tree -L 2 -H 1.12.2（${name}） > 1.12.2-n-es.html
 sed 's/-/ /g' -i 1.12.2-n-es.html
 mv *.html ../
 cd ../
@@ -51,7 +51,7 @@ cd ../
 ######################### 1.16-n-es
 cd ./1.16
 cd ./assets
-tree -L 1 -H 1.16（${name}） > 1.16-n-es.html
+tree -L 2 -H 1.16（${name}） > 1.16-n-es.html
 sed 's/-/ /' -i 1.16-n-es.html
 mv *.html ../
 cd ../
@@ -76,7 +76,7 @@ cd ../
 ######################### 1.16-fabric-n-es
 cd ./1.16-fabric
 cd ./assets
-tree -L 1 -H 1.16-fabric（${name}） > 1.16-fabric-n-es.html
+tree -L 2 -H 1.16-fabric（${name}） > 1.16-fabric-n-es.html
 sed 's/-/ /' -i 1.16-fabric-n-es.html
 mv *.html ../
 cd ../
@@ -101,7 +101,7 @@ cd ../
 ######################### 1.18-n-es
 cd ./1.18
 cd ./assets
-tree -L 1 -H 1.18（${name}） > 1.18-n-es.html
+tree -L 2 -H 1.18（${name}） > 1.18-n-es.html
 sed 's/-/ /' -i 1.18-n-es.html
 mv *.html ../
 cd ../
@@ -126,7 +126,7 @@ cd ../
 ######################### 1.18-fabric-n-es
 cd ./1.18-fabric
 cd ./assets
-tree -L 1 -H 1.18-fabric（${name}） > 1.18-fabric-n-es.html
+tree -L 2 -H 1.18-fabric（${name}） > 1.18-fabric-n-es.html
 sed 's/-/ /' -i 1.18-fabric-n-es.html
 mv *.html ../
 cd ../
@@ -151,7 +151,7 @@ cd ../
 ######################### 1.19-n-es
 cd ./1.19
 cd ./assets
-tree -L 1 -H 1.19（${name}） > 1.19-n-es.html
+tree -L 2 -H 1.19（${name}） > 1.19-n-es.html
 sed 's/-/ /' -i 1.19-n-es.html
 mv *.html ../
 cd ../

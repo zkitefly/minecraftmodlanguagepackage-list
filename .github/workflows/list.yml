@@ -39,6 +39,9 @@ jobs:
         if: steps.check_updata.outputs.changed == 'true'
         shell: bash
         run: |
+          name=$(cat "latest.txt" | jq -r ".name")
+          cat "latest.txt" | jq -r ".zipball_url" > d.txt
+          targetcommitish=$(cut "latest.txt" -c1-7 | jq -r ".target_commitish")
           ./l.sh
           git add -A
           git commit -m "(`date '+%Y-%m-%d %H:%M:%S'`)$GITHUB_RUN_ID

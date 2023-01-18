@@ -49,6 +49,7 @@ jobs:
           wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O latest.zip -i "d.txt"
           # 解压
           unzip -q latest.zip
+          ls
           # 跳转
           cd ./Minecraft-Mod-Language-Package-${tag_name}
           cd ./projects

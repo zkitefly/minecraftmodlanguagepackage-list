@@ -47,7 +47,7 @@ jobs:
           # 下载资源
           wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -i "download.txt"
           # 解压
-          unzip *
+          unzip *.zip
           # 跳转
           cd Minecraft-Mod-Language-Package-${tag_name}/projects
           ######################################################

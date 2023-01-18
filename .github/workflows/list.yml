@@ -7,7 +7,7 @@ on:
       - '.github/workflows/list.yml'
       - 'l.sh'
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */3 * * *'
 
 jobs:
   update_list:

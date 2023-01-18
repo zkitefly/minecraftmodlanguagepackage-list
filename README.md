@@ -4,7 +4,7 @@
 
 查看请前往：https://zkitefly.github.io/minecraftmodlanguagepackage-list/
 
-链接无法点击，留着他只是增加辨识度
+里面链接无法点击，留着他只是增加辨识度
 
 ## 列表
 

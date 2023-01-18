@@ -18,7 +18,7 @@ cd ./projects
 ###################### 1.12.2
 cd ./1.12.2
 cd ./assets
-tree -t -h -N -H 1.12.2 > 1.12.2.html
+tree -H 1.12.2（${name}） > 1.12.2.html
 mv *.html ../
 cd ../
 mv *.html ../
@@ -26,7 +26,7 @@ cd ../
 ###################### 1.16
 cd ./1.16
 cd ./assets
-tree -t -h -N -H 1.16-${name} > 1.16.html
+tree -H 1.16（${name}） > 1.16.html
 mv *.html ../
 cd ../
 mv *.html ../
@@ -34,7 +34,7 @@ cd ../
 ###################### 1.16-fabric
 cd ./1.16-fabric
 cd ./assets
-tree -t -h -N -H 1.16-fabric-${name} > 1.16-fabric.html
+tree -H 1.16-fabric（${name}） > 1.16-fabric.html
 mv *.html ../
 cd ../
 mv *.html ../
@@ -42,7 +42,7 @@ cd ../
 ###################### 1.18
 cd ./1.18
 cd ./assets
-tree -t -h -N -H 1.18-${name} > 1.18.html
+tree -H 1.18（${name}） > 1.18.html
 mv *.html ../
 cd ../
 mv *.html ../
@@ -50,7 +50,7 @@ cd ../
 ###################### 1.18-fabric
 cd ./1.18-fabric
 cd ./assets
-tree -t -h -N -H 1.18-fabric-${name} > 1.18-fabric.html
+tree -H 1.18-fabric（${name}） > 1.18-fabric.html
 mv *.html ../
 cd ../
 mv *.html ../
@@ -58,7 +58,7 @@ cd ../
 ###################### 1.19
 cd ./1.19
 cd ./assets
-tree -t -h -N -H 1.19-${name} > 1.19.html
+tree -H 1.19（${name}） > 1.19.html
 mv *.html ../
 cd ../
 mv *.html ../

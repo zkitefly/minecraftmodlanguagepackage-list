@@ -69,9 +69,3 @@ cd ../
 # 删除文件
 rm -r ./CFPAOrg-Minecraft-Mod-Language-Package-${target_commitish}
 rm latest.zip
-# commit
-git add -A
-git commit -m "${name}(`date '+%Y-%m-%d %H:%M:%S'`)$GITHUB_RUN_ID
- 
-GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
-  "

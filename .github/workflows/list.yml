@@ -102,3 +102,15 @@ jobs:
           # 删除文件
           rm -r Minecraft-Mod-Language-Package-${tag_name}
           rm Minecraft-Mod-Language-Package-${tag_name}.zip
+          # commit
+          git add -A
+          git commit -m "`date '+%Y-%m-%d %H:%M:%S'`$GITHUB_RUN_ID
+
+          GitHub Action: https://github.com/${{ github.repository }}/actions/runs/$GITHUB_RUN_ID
+            "
+      - name: Push changes
+        if: steps.check_updata.outputs.changed == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}

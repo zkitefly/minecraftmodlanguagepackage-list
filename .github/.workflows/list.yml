@@ -1,0 +1,104 @@
+name: Update list
+
+on: 
+  push:
+    branches: [main]
+    paths: 
+      - '.github/.workflows/list.yml'
+  schedule:
+    - cron: '0 */2 * * *'
+
+jobs:
+  update_resources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name:  install jq & set time & tree
+        shell: bash
+        run: |
+          sudo apt install jq
+          jq --version
+          sudo timedatectl set-timezone 'Asia/Shanghai'
+      - name: check update
+        id: check_updata
+        shell: bash
+        run: |
+          echo '========================== 检查区 ==========================='
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O latest.txt "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/latest"
+          if md5sum -c --quiet 'md5.md5'; then
+            # No changes
+            echo 'changed=false' >> $GITHUB_OUTPUT
+          else
+            # Changes detected
+            echo 'changed=true' >> $GITHUB_OUTPUT
+            md5sum latest.txt > md5.md5
+          fi
+          echo '============================================================'
+      - name: Fetch list
+        if: steps.check_updata.outputs.changed == 'true'
+        shell: bash
+        run: |
+          # 获取 Latest GitHub Releases 名称
+          name=$(cat "latest.txt" | jq -r ".name")
+          # 获取 tag 名称
+          tag_name=$(cat "latest.txt" | jq -r ".tag_name")
+          # 获取下载资源地址
+          cat "latest.txt" | jq -r ".zipball_url" > download.txt
+          # 下载资源
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -i "download.txt"
+          # 解压
+          unzip *
+          # 跳转
+          cd Minecraft-Mod-Language-Package-${tag_name}/projects
+          ######################################################
+          ###################### 1.12.2
+          cd 1.12.2/assets
+          tree -t -h -N -D -H 1.12.2 > 1.12.2.html
+          mv *.html ../
+          cd ../
+          mv *.html ../
+          cd ../
+          ###################### 1.16
+          cd 1.16/assets
+          tree -t -h -N -D -H 1.16-${name} > 1.16.html
+          mv *.html ../
+          cd ../
+          mv *.html ../
+          cd ../
+          ###################### 1.16-fabric
+          cd 1.16-fabric/assets
+          tree -t -h -N -D -H 1.16-fabric-${name} > 1.16-fabric.html
+          mv *.html ../
+          cd ../
+          mv *.html ../
+          cd ../
+          ###################### 1.18
+          cd 1.18/assets
+          tree -t -h -N -D -H 1.18-${name} > 1.18.html
+          mv *.html ../
+          cd ../
+          mv *.html ../
+          cd ../
+          ###################### 1.18-fabric
+          cd 1.18-fabric/assets
+          tree -t -h -N -D -H 1.18-fabric-${name} > 1.18-fabric.html
+          mv *.html ../
+          cd ../
+          mv *.html ../
+          cd ../
+          ###################### 1.19
+          cd 1.19/assets
+          tree -t -h -N -D -H 1.19-${name} > 1.19.html
+          mv *.html ../
+          cd ../
+          mv *.html ../
+          cd ../
+          ######################################################
+          # 文件传到上上一层
+          mv *.html ../
+          cd ../
+          mv *.html ../
+          cd ../
+          # 删除文件
+          rm -r Minecraft-Mod-Language-Package-${tag_name}
+          rm Minecraft-Mod-Language-Package-${tag_name}.zip

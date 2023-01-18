@@ -4,7 +4,7 @@ wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O latest.zip -i "d.
 unzip -q latest.zip
 ls
 # 跳转
-cd ./CFPAOrg-Minecraft-Mod-Language-Package-${targetcommitish}
+cd ./CFPAOrg-Minecraft-Mod-Language-Package-${target}
 cd ./projects
 ######################################################
 ###################### 1.12.2

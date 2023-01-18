@@ -10,7 +10,7 @@ on:
     - cron: '0 */2 * * *'
 
 jobs:
-  update_resources:
+  update_list:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

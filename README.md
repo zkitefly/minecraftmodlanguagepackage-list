@@ -1,6 +1,10 @@
 # minecraftmodlanguagepackage-list
  
-～*就是简单的将列表给统计了一下，没啥高科技*～
+~*就是简单的将列表给统计了一下，没啥高科技*~
+
+查看请前往：https://zkitefly.github.io/minecraftmodlanguagepackage-list/
+
+链接无法点击，留着他只是增加辨识度
 
 ## 列表
 

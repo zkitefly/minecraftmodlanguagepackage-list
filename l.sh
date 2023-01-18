@@ -69,3 +69,4 @@ cd ../
 # 删除文件
 rm -r ./CFPAOrg-Minecraft-Mod-Language-Package-${targetcommitish}
 rm latest.zip
+rm latest.txt

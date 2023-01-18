@@ -42,8 +42,9 @@ jobs:
           name=$(cat "latest.txt" | jq -r ".name")
           # 获取 tag 名称
           tag_name=$(cat "latest.txt" | jq -r ".tag_name")
+          # 获取的 target_commitish  前1-7个字符
+          target_commitish=$(cut "latest.txt" -c1-7 | jq -r ".target_commitish")
           # 获取下载资源地址
-          d=$(cat "latest.txt" | jq -r ".zipball_url")
           cat "latest.txt" | jq -r ".zipball_url" > d.txt
           # 下载资源
           wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O latest.zip -i "d.txt"
@@ -51,7 +52,7 @@ jobs:
           unzip -q latest.zip
           ls
           # 跳转
-          cd ./Minecraft-Mod-Language-Package-${tag_name}
+          cd ./CFPAOrg-Minecraft-Mod-Language-Package-${target_commitish}
           cd ./projects
           ######################################################
           ###################### 1.12.2
@@ -109,8 +110,8 @@ jobs:
           mv *.html ../
           cd ../
           # 删除文件
-          rm -r Minecraft-Mod-Language-Package-${tag_name}
-          rm Minecraft-Mod-Language-Package-${tag_name}.zip
+          rm -r ./CFPAOrg-Minecraft-Mod-Language-Package-${target_commitish}
+          rm latest.zip
           # commit
           git add -A
           git commit -m "`date '+%Y-%m-%d %H:%M:%S'`$GITHUB_RUN_ID

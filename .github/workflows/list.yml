@@ -39,11 +39,6 @@ jobs:
         if: steps.check_updata.outputs.changed == 'true'
         shell: bash
         run: |
-          # 获取资源地址
-          cat "latest.txt" | jq -r ".zipball_url" > d.txt
-          # 获取的 target_commitish 前1-7个字符
-          targetcommitish=$(cut "latest.txt" -c1-7 | jq -r ".target_commitish")
-          # 
           ./l.sh
           git add -A
           git commit -m "(`date '+%Y-%m-%d %H:%M:%S'`)$GITHUB_RUN_ID

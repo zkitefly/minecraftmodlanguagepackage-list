@@ -1,3 +1,8 @@
+# 获取 Latest GitHub Releases 名称 & 资源地址
+name=$(cat "latest.txt" | jq -r ".name")
+cat "latest.txt" | jq -r ".zipball_url" > d.txt
+# 获取的 target_commitish  前1-7个字符
+targetcommitish=$(cut "latest.txt" -c1-7 | jq -r ".target_commitish")
 # 下载资源
 wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O latest.zip -i "d.txt"
 # 解压

@@ -24,7 +24,7 @@ jobs:
         shell: bash
         run: |
           echo '========================== 检查区 ==========================='
-          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 -O latest.txt "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/latest"
+          wget --no-dns-cache --random-wait --continue -d -T 60 -t 30 --no-warc-digests -O latest.txt "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/latest"
           if md5sum -c --quiet 'md5.md5'; then
             # No changes
             echo 'changed=false' >> $GITHUB_OUTPUT

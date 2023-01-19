@@ -1,6 +1,3 @@
-# 获取的 target_commitish 前1-7个字符 & 删除文件夹
-targetcommitish=$(cat "latest.txt" | jq -r ".target_commitish" | cut -c1-7)
-rm -r ./CFPAOrg-Minecraft-Mod-Language-Package-${targetcommitish}
 # 获取 Latest GitHub Releases 名称 & 资源地址
 name=$(cat "latest.txt" | jq -r ".name")
 cat "latest.txt" | jq -r ".zipball_url" > d.txt
@@ -179,3 +176,4 @@ mv *.html ../
 cd ../
 # 删除文件
 rm latest.zip
+rm -r ./CFPAOrg-Minecraft-Mod-Language-Package-${targetcommitish}

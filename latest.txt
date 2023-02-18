@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/92731834",
-  "assets_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/92731834/assets",
-  "upload_url": "https://uploads.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/92731834/assets{?name,label}",
-  "html_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/tag/Snapshot-2023021617041676567083",
-  "id": 92731834,
+  "url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/92910466",
+  "assets_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/92910466/assets",
+  "upload_url": "https://uploads.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/92910466/assets{?name,label}",
+  "html_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/tag/Snapshot-2023021810201676715602",
+  "id": 92910466,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,19 +24,19 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDOBT7mWs4Fhvm6",
-  "tag_name": "Snapshot-2023021617041676567083",
-  "target_commitish": "74c2a7e9cf73b88ae52c7abf1a27c5104764b9eb",
-  "name": "汉化资源包-Snapshot-2023021617041676567083",
+  "node_id": "RE_kwDOBT7mWs4FibOC",
+  "tag_name": "Snapshot-2023021810201676715602",
+  "target_commitish": "76eb433adad4c9f1c8f13db630c6b941e279f094",
+  "name": "汉化资源包-Snapshot-2023021810201676715602",
   "draft": false,
   "prerelease": false,
-  "created_at": "2023-02-16T17:01:18Z",
-  "published_at": "2023-02-16T17:04:50Z",
+  "created_at": "2023-02-18T10:16:10Z",
+  "published_at": "2023-02-18T10:20:05Z",
   "assets": [
     {
-      "url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/assets/95945546",
-      "id": 95945546,
-      "node_id": "RA_kwDOBT7mWs4FuANK",
+      "url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/assets/96170370",
+      "id": 96170370,
+      "node_id": "RA_kwDOBT7mWs4Fu3GC",
       "name": "Minecraft-Mod-Language-Package-1.12.2.zip",
       "label": "",
       "uploader": {
@@ -62,13 +62,13 @@
       "content_type": "application/zip",
       "state": "uploaded",
       "size": 5817561,
-      "download_count": 85,
-      "created_at": "2023-02-16T17:04:52Z",
-      "updated_at": "2023-02-16T17:04:52Z",
-      "browser_download_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/Snapshot-2023021617041676567083/Minecraft-Mod-Language-Package-1.12.2.zip"
+      "download_count": 13,
+      "created_at": "2023-02-18T10:20:07Z",
+      "updated_at": "2023-02-18T10:20:07Z",
+      "browser_download_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/Snapshot-2023021810201676715602/Minecraft-Mod-Language-Package-1.12.2.zip"
     }
   ],
-  "tarball_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/tarball/Snapshot-2023021617041676567083",
-  "zipball_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/zipball/Snapshot-2023021617041676567083",
+  "tarball_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/tarball/Snapshot-2023021810201676715602",
+  "zipball_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/zipball/Snapshot-2023021810201676715602",
   "body": ""
 }

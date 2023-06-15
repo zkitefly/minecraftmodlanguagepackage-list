@@ -1,1 +1,1 @@
-https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/zipball/Snapshot-2023061512531686833595
+https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/zipball/Snapshot-2023061517191686849561

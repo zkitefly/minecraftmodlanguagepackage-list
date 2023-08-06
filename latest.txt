@@ -62,7 +62,7 @@
       "content_type": "application/zip",
       "state": "uploaded",
       "size": 3481673,
-      "download_count": 16,
+      "download_count": 18,
       "created_at": "2023-08-05T06:48:50Z",
       "updated_at": "2023-08-05T06:48:51Z",
       "browser_download_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/Snapshot-2023080506481691218126/Minecraft-Mod-Language-Package-1.18.zip"
@@ -96,7 +96,7 @@
       "content_type": "application/zip",
       "state": "uploaded",
       "size": 442564,
-      "download_count": 13,
+      "download_count": 15,
       "created_at": "2023-08-05T06:48:51Z",
       "updated_at": "2023-08-05T06:48:52Z",
       "browser_download_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/Snapshot-2023080506481691218126/Minecraft-Mod-Language-Package-1.19.zip"

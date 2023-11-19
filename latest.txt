@@ -1,9 +1,9 @@
 {
-  "url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/130211003",
-  "assets_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/130211003/assets",
-  "upload_url": "https://uploads.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/130211003/assets{?name,label}",
-  "html_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/tag/Snapshot-2023111908581700384319",
-  "id": 130211003,
+  "url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/130212845",
+  "assets_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/130212845/assets",
+  "upload_url": "https://uploads.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/releases/130212845/assets{?name,label}",
+  "html_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/tag/Snapshot-2023111910091700388575",
+  "id": 130212845,
   "author": {
     "login": "github-actions[bot]",
     "id": 41898282,
@@ -24,18 +24,18 @@
     "type": "Bot",
     "site_admin": false
   },
-  "node_id": "RE_kwDOBT7mWs4Hwty7",
-  "tag_name": "Snapshot-2023111908581700384319",
-  "target_commitish": "572ec4b3f69f97e954f74d03c6c76c78f83f480e",
-  "name": "汉化资源包-Snapshot-2023111908581700384319",
+  "node_id": "RE_kwDOBT7mWs4HwuPt",
+  "tag_name": "Snapshot-2023111910091700388575",
+  "target_commitish": "bea4b81b03806dd7b965813d8a1cfa36638c0ed4",
+  "name": "汉化资源包-Snapshot-2023111910091700388575",
   "draft": false,
   "prerelease": false,
-  "created_at": "2023-11-19T08:56:42Z",
-  "published_at": "2023-11-19T08:58:42Z",
+  "created_at": "2023-11-19T10:04:58Z",
+  "published_at": "2023-11-19T10:09:38Z",
   "assets": [
 
   ],
-  "tarball_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/tarball/Snapshot-2023111908581700384319",
-  "zipball_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/zipball/Snapshot-2023111908581700384319",
+  "tarball_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/tarball/Snapshot-2023111910091700388575",
+  "zipball_url": "https://api.github.com/repos/CFPAOrg/Minecraft-Mod-Language-Package/zipball/Snapshot-2023111910091700388575",
   "body": ""
 }

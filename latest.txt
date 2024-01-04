@@ -96,7 +96,7 @@
       "content_type": "application/zip",
       "state": "uploaded",
       "size": 382291,
-      "download_count": 12,
+      "download_count": 16,
       "created_at": "2024-01-04T02:35:08Z",
       "updated_at": "2024-01-04T02:35:08Z",
       "browser_download_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/Snapshot-2024010402341704335654/Minecraft-Mod-Language-Package-1.20.zip"

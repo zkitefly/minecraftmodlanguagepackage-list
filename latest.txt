@@ -62,7 +62,7 @@
       "content_type": "application/zip",
       "state": "uploaded",
       "size": 279515,
-      "download_count": 0,
+      "download_count": 9,
       "created_at": "2024-01-05T23:39:50Z",
       "updated_at": "2024-01-05T23:39:50Z",
       "browser_download_url": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/Snapshot-2024010523391704497947/Minecraft-Mod-Language-Package-1.20-fabric.zip"
